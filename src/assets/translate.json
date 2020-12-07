@@ -1,0 +1,10 @@
+{
+  "login":{
+    "fr": "Connexion",
+    "en": "Login"
+  },
+  "register":{
+    "fr": "S'enregistrer",
+    "en": "Register"
+  }
+}
