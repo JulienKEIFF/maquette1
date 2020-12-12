@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     checkPath: function(value){
-      if(value == 0) { this.$router.push({ path: '/' }) };
+      if(value == 0 && this.$route.path !== "/") { this.$router.push({ path: '/' }) };
       if(value == 1) { this.$router.push({ path: '/product' }) };
     }
   }

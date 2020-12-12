@@ -27,13 +27,15 @@ export default {
     box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 1%;
     .footer-links{
+      flex: 1 0 45%;
       position: relative;
       left: 5%;
+      height: 1%;
       width: 20%;
-      &:first-of-type{
-        margin-top: 0.5%;
-      }
+      background: red;
     }
   }
 </style>
