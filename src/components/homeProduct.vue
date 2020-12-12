@@ -1,6 +1,12 @@
 <template>
   <div class="home-product">
     <img :src="getImg(productInfo.img)" alt="" class="image-product">
+    <div class="price">
+      <div class="price-text">
+        {{productInfo.price}}
+      </div>
+      <div class="price-bg"></div>
+    </div>
     <div class="info">
       <div class="text">
         {{productInfo.name | capitalize}}
@@ -38,7 +44,7 @@ export default {
 
 <style scoped lang="scss">
   .home-product{
-      position: relative;
+    position: relative;
     width: 30%;
     height: 50vh;
     background: grey;
@@ -48,6 +54,35 @@ export default {
       height: 100%;
       width: 100%;
       object-fit: cover;
+    }
+    .price{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 6vw;
+      height: 6vw;
+        overflow: hidden;
+      .price-bg{
+        position: absolute;
+        top: -1vw;
+        right: -1vw;
+        border-radius: 50%;
+        height: 6vw;
+        width: 100%;
+        background: white;
+        opacity: 0.8;
+      }
+      .price-text{
+        position: absolute;
+        top: 25%;
+        right: 0%;
+        z-index: 1;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #444;
+        width: 80%;
+        text-align: center;
+      }
     }
     .info{
       position: absolute;
@@ -92,6 +127,7 @@ export default {
           font-size: 120%;
           &:hover{
             color: #2c3e50;
+            cursor: pointer;
           }
         }
       }

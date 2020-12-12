@@ -7,7 +7,7 @@
     </div>
   
     <div id="nav">
-      <p class="page" v-for="item in page" :key="item">{{ item | uppercase }} <span class="bar"></span> </p>
+      <p class="page" v-for="(item, i) in page" :key="item" v-on:click="checkPath(i)">{{ item | uppercase }} <span class="bar"></span> </p>
     </div>
   </div>
 </template>
@@ -19,6 +19,12 @@ export default {
     return{
       info: ["Retrait des produit sous 2H", "Trouver un point de retrait", "Suivis de commande", "S'identifier", "Panier"],
       page: ["LOGO", "Espace Pare-douche", "Espace Cloison et parois", "Espace cheminée"]
+    }
+  },
+  methods: {
+    checkPath: function(value){
+      if(value == 0) { this.$router.push({ path: '/' }) };
+      if(value == 1) { this.$router.push({ path: '/product' }) };
     }
   }
 }

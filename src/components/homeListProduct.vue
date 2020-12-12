@@ -15,37 +15,43 @@ export default {
         name: "Produit 1",
         id: 0,
         img: "img1.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et.",
+        price: "35€"
       },
       {
         name: "Produit 2",
         id: 1,
         img: "img2.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et.",
+        price: "120€"
       },
       {
         name: "Produit 3",
         id: 2,
         img: "img3.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et.",
+        price: "120€"
       },
       {
         name: "Produit 4",
         id: 3,
         img: "img1.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et.",
+        price: "120€"
       },
       {
         name: "Produit 5",
         id: 4,
         img: "img2.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et.",
+        price: "120€"
       },
       {
         name: "Produit 6",
         id: 5,
         img: "img3.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum turpis et.",
+        price: "1200€"
       }]
     }
   }

@@ -1,13 +1,19 @@
 <template>
   <div class="footer">
-    {{"verre-tech" | uppercase}}
+    <div v-for="info in infosFooter" :key="info" class="footer-links">
+      {{info}}
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'footer-vue',
-  infosFooter: [""]
+  data(){
+    return{
+      infosFooter: ["CGV", "CGU", "Notre groupe", "Assistance"]
+    }
+  }
 }
 </script>
 
@@ -19,5 +25,15 @@ export default {
     height: 100px;
     background: white;
     box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    .footer-links{
+      position: relative;
+      left: 5%;
+      width: 20%;
+      &:first-of-type{
+        margin-top: 0.5%;
+      }
+    }
   }
 </style>

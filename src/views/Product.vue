@@ -1,6 +1,7 @@
 <template>
   <div class="product">
     <product-achat />
+    cool
   </div>
 </template>
 
