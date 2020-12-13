@@ -1,18 +1,19 @@
 <template>
   <div class="product">
+    <filter-product />
     <product-achat />
-    cool
   </div>
 </template>
 
 <script>
 import ProductAchat from '../components/productAchat.vue'
-// @ is an alias to /src
+import filterProduct from '../components/filterProduct.vue'
 
 export default {
   name: 'Product',
   components: {
-    ProductAchat
+    ProductAchat,
+    filterProduct
   }
 }
 </script>
