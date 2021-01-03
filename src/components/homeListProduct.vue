@@ -59,16 +59,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
+#home-list-product{
+  margin: 0 auto;
+  margin-top: 2%;
+  padding-top: 1%;
+  width: 80vw;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1 1 30%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (orientation: portrait) {
   #home-list-product{
-    margin: 0 auto;
-    margin-top: 2%;
-    padding-top: 1%;
-    width: 80vw;
-    background: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex: 1 1 30%;
-     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    width: 95vw;
+    padding-top: 4%;
   }
+}
 </style>

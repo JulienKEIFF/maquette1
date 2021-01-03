@@ -87,4 +87,22 @@ export default {
     }
   }
 }
+
+@media screen and (orientation: portrait) {
+  #filter{
+    width: 90vw;
+    height: 20vh;
+  }  
+  #filter-group{
+    flex-wrap: wrap !important;
+
+  }
+  .block{
+    width: 45% !important;
+    font-size: 0.8em;
+    &:nth-child(2){
+      border: none !important;
+    }
+  }
+}
 </style>

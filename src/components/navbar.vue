@@ -136,6 +136,23 @@ export default {
   }
 }
 
+@media screen and (orientation: portrait){
+  #info{
+    font-size: 0.65em;
+  }
+  #search{
+    display: none;
+  }
+  #nav{
+    justify-content: space-evenly;
+    .page{
+      text-align: center;
+      margin: 0 !important;
+      font-size: 0.8em !important;
+    }
+  }
+}
+
 .fade-delay-enter-active{
   transition: opacity .5s;
   transition-delay: 0.3s;

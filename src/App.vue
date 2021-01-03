@@ -35,14 +35,9 @@ body{
   height: 100%;
 }
 
-#nav {
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+@media screen and (orientation: portrait){
+  #app{
+    padding-top: 14vh;
   }
 }
 

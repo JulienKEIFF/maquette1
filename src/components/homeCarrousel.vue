@@ -118,6 +118,23 @@ export default {
   }
 }
 
+@media screen and (orientation: portrait){
+  .carrousel{
+    width: 100vw;
+    height: 35vh;
+  }
+  .point{
+    height: 2vw !important;
+    width: 2vw !important;
+    margin: 0 1vw !important;
+  }
+  .info-txt{
+    font-size: 1.2em;
+    height: 40% !important;
+    text-align: center;
+  }
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
 }
