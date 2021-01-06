@@ -4,9 +4,15 @@
     <transition name="fade-delay">
       <cart v-if="cart" />
     </transition>
-    <transition name="fade">
-      <div id="bg" v-if="cart" @click="cart = !cart"></div>
+
+    <transition name="fade-delay">
+      <login v-if="login" />
     </transition>
+
+    <transition name="fade">
+      <div id="bg" v-if="bg" @click="cart = false; login = false; bg = !bg"></div>
+    </transition>
+
 
     <div id="info">
       <input type="text" name="search" id="search" placeholder="Rechercher un produit"> <label for="search"></label>
@@ -21,16 +27,21 @@
 
 <script>
 import cart from "./cart"
+import login from './login'
+
 export default {
   name: "navbar",
   components:{
-    cart
+    cart,
+    login
   },
   data(){
     return{
       info: ["Retrait des produit sous 2H", "Trouver un point de retrait", "Suivis de commande", "Panier", "S'identifier"],
       page: ["LOGO", "Espace Pare-douche", "Espace Cloison et parois", "Espace cheminée"],
-      cart: false
+      cart: false,
+      login: false,
+      bg: false,
     }
   },
   methods: {
@@ -39,7 +50,8 @@ export default {
       if(value == 1) { this.$router.push({ path: '/product' }) };
     },
     checkInteract: function(value){
-      if(value == 3){this.cart = !this.cart}
+      if(value == 3){this.cart = !this.cart; this.bg = !this.bg}
+      if(value == 4){this.login = !this.login; this.bg = !this.bg}
     }
   }
 }

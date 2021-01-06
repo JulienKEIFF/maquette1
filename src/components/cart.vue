@@ -38,9 +38,26 @@ export default {
         img: "img1.jpg",
         qte: 1,
         price: 16.99
+      },{
+        name: "Produit 2 | 39cm x 25cm",
+        img: "img2.jpg",
+        qte: 5,
+        price: 19.99
       }],
-      cost: 132.98
+      cost: 0
     }
+  },
+  methods: {
+    calcCost: function calcCost(){
+      for (let i = 0; i < this.cartList.length; i++) {
+        const product = this.cartList[i];
+        this.cost = this.cost + (product.price * product.qte);
+      }
+      this.cost = Math.round(this.cost * 100) / 100;
+    }
+  },
+  mounted: function(){
+    this.calcCost();
   }
 }
 </script>
