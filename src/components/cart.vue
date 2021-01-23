@@ -125,4 +125,69 @@ export default {
     }
   }
 }
+
+@media screen and (orientation: portrait) {
+  #cart{
+    position: absolute;
+    width: 95vw;
+    right: 2vw;
+    top: 5vh;
+    background: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    z-index: 21;
+    #triangle{
+      position: absolute;
+      top: -5%;
+      right: 12%;
+      width: 0;
+      height: 0;
+      border-left: 2vh solid transparent; 
+      border-bottom: 2vh solid white;
+      border-right: 2vh solid transparent;
+    }
+    #title{
+      width: 93%;
+      font-size: 1.3em;
+      margin-left: 3%;
+      margin-top: 2.5%;
+      padding-bottom: 0.7%;
+      border-bottom: 1px solid black;
+    }
+    #cart-item{
+      width: 93%;
+      margin-left: 3%;
+      margin-top: 3%;
+    }
+    #cost{
+      width: 93%;
+      margin: 1vh 0vh 1vh 3%;
+      padding-top: 2%;
+      border-top: 1px solid black;
+      #cost-price{
+        position: absolute;
+        right: 5%;
+      }
+    }
+    #button{
+      display: flex;
+      justify-content: space-between;
+      width: 93%;
+      margin-left: 3%;
+      height: 5vh;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      button{
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      #clear{
+        background: #e1e1e1;
+      }
+      #validate{
+        background: rgb(167, 209, 167);
+      }
+    }
+  }
+}
 </style>

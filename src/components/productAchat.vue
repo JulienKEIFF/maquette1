@@ -63,14 +63,20 @@ export default {
 <style scoped lang="scss">
 #product-page{
   margin: 0 auto;
-    margin-top: 2%;
-    padding-top: 1%;
-    width: 80vw;
-    background: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex: 1 1 30%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 2%;
+  padding-top: 1%;
+  width: 80vw;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1 1 30%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (orientation: portrait) {
+  #product-page {
+    width: 90%;
+  }
 }
 </style>

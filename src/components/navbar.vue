@@ -6,7 +6,7 @@
     </transition>
 
     <transition name="fade-delay">
-      <login v-if="login" />
+      <login v-if="login" @validate="login = false; bg = false" />
     </transition>
 
     <transition name="fade">
@@ -42,6 +42,7 @@ export default {
       cart: false,
       login: false,
       bg: false,
+      show: true
     }
   },
   methods: {
@@ -53,6 +54,9 @@ export default {
       if(value == 3){this.cart = !this.cart; this.bg = !this.bg}
       if(value == 4){this.login = !this.login; this.bg = !this.bg}
     }
+  },
+  watch: {
+    
   }
 }
 </script>

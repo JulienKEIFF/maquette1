@@ -1,18 +1,24 @@
 <template>
   <div id="client">
+    <navbar />
     <div id="title">{{"Espace client"}}</div>
     
     <infoClient />
+    <footer-vue />
   </div>
 </template>
 
 <script>
+import Navbar from '../components/navbar.vue'
+import FooterVue from '../components/footerVue.vue'
 import infoClient from '../components/user/info'
 
 export default {
   name: "user",
   components:{
     infoClient,
+    Navbar,
+    FooterVue
   }
 }
 </script>

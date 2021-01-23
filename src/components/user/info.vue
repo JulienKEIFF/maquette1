@@ -51,7 +51,6 @@ export default {
   display: flex;
   .left{
     width: 33%;
-    border-right: 1px solid black;
     #logo-client{
       width: 100%;
       .logo{
@@ -87,7 +86,6 @@ export default {
     width: 73%;
     .title{
       font-size: 2em;
-      text-decoration: underline;
     }
   }
 }

@@ -104,5 +104,9 @@ export default {
       border: none !important;
     }
   }
+  .input-number{
+    width: 90%;
+    margin-bottom: 5%;
+  }
 }
 </style>

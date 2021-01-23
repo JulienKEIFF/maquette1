@@ -1,23 +1,17 @@
 <template>
   <div id="app">
-    <navbar />
-
+    
     <transition name="fade">
       <router-view></router-view>
     </transition>
 
-    <footer-vue />
   </div>
 </template>
 
 <script>
-import FooterVue from './components/footerVue.vue'
-import Navbar from './components/navbar.vue'
+
+
 export default {
-  components:{
-    Navbar,
-    FooterVue
-  }
 }
 </script>
 
