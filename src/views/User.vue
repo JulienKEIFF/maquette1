@@ -1,9 +1,11 @@
 <template>
   <div id="client">
     <navbar />
+
     <div id="title">{{"Espace client"}}</div>
     
     <infoClient />
+    
     <footer-vue />
   </div>
 </template>

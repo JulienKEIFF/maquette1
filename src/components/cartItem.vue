@@ -1,8 +1,8 @@
 <template>
-  <div class="cart-item">
+  <div class="cart-item" ref="cartItem">
     
     <div class="info">
-      <img :src="getImg(data.img)" class="item-img" >
+      <img :src="getImg(data.img)" class="item-img" ref="cartImg" >
 
       <div class="item-name">
         {{data.name}}
@@ -24,11 +24,23 @@
 export default {
   name: "cart-item",
   props:{
-    data: Object
+    data: Object,
+    fontSize: String,
+    background: Boolean,
+    margin: Number
   },
   methods:{
     getImg: function(item){
       return require(`../assets/img/${item}`)
+    }
+  },
+  mounted: function(){
+    this.$refs.cartItem.style.height = this.$refs.cartImg.clientWidth +"px";
+    this.$refs.cartItem.style.marginBottom = this.margin +"px";
+    this.$refs.cartItem.style.fontSize = this.fontSize;
+    if (this.background) {
+      this.$refs.cartItem.style.background = '#';
+      this.$refs.cartItem.style.boxShadow = '#aaa 0.5vh 0.5vh 1vh'
     }
   }
 }
@@ -40,6 +52,7 @@ export default {
   height: 5vh;
   margin: 1% 0;
   width: 100%;
+  cursor: pointer;
   .info{
     height: 100%;
     display: flex;
