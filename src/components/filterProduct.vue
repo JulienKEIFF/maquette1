@@ -87,6 +87,18 @@ export default {
     }
   }
 }
+.btn {
+  background: #ddd;
+  height: 100%;
+  border-radius: 10% / 50%;
+  border: none;
+  &:active {
+    background: #ccc;
+  }
+  &:focus{
+    outline: none;
+  }
+}
 
 @media screen and (orientation: portrait) {
   #filter{

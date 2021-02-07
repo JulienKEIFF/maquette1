@@ -52,6 +52,7 @@ export default {
   height: 5vh;
   margin: 1% 0;
   width: 100%;
+  border-radius: 1% / 5%;
   cursor: pointer;
   .info{
     height: 100%;
@@ -62,6 +63,8 @@ export default {
       width: 15%;
       object-fit: cover;
       margin-right: 2%;
+      border-top-left-radius: 7%;
+      border-bottom-left-radius: 7%;
     }
     .item-name{
       width: 55%;

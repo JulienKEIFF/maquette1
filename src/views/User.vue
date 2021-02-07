@@ -3,7 +3,6 @@
     <navbar />
 
     <div id="title">{{"Espace client"}}</div>
-    
     <infoClient />
     
     <footer-vue />
@@ -27,18 +26,18 @@ export default {
 
 <style scoped lang="scss">
 #client{
-  background: white;
-  width: 93vw;
   margin: 0 auto;
   #title{
-    width: 95%;
+    position: absolute;
+    width: 90%;
     font-size: 4em;
     font-weight: lighter;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-bottom: 2%;
     padding-top: 2%;
     border-bottom: 2px solid #222222;
     color: #222222;
+    z-index: 1;
   }
 }
 </style>

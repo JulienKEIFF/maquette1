@@ -16,6 +16,7 @@
         </span>
         <br>
         <a class="link">En savoir plus</a>
+        <cart class="icon" color="#444444" />
       </div>
 
       <div class="bg"></div>
@@ -24,10 +25,14 @@
 </template>
 
 <script>
+import Card from './icon/cart-icon.vue'
 export default {
   name: "home-product-list",
   props:{
     productInfo: Object
+  },
+  components: {
+    Card
   },
   data(){
     return{
@@ -133,6 +138,7 @@ export default {
     }
     transition-duration: 0.5s;
   }
+  .icon {width: 10%; height: 10%;}
 }
 @media screen and (orientation: landscape){
 .home-product:hover{

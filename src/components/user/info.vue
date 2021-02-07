@@ -8,16 +8,33 @@
           <svgPin class="pin" color="#444" />
           Lille
         </span>
+        <div class="bar" style="background: #333; height: 2px; margin-left: 2vw"></div>
+
+        <div id="parameters">
+          <button class="btn-parameter">Voir mes informations personnel</button>
+          <button class="btn-parameter">Changer mon magasin par défaut</button>
+        </div>
       </div>
       
     </div>
 
     <div class="right">
       <div class="section">
-        <div class="title">Votre dernière commandes - {{cost}}€</div>
+        <div class="title">Votre dernière commandes</div>
+        <div class="sub-title">20 Janvier 2021 - {{cost}}€  <button class="btn">Voir la facture</button></div>
         
         <div class="last-checkout"> 
-           <card v-for="(item, i) in lastCheckout" :key="i" :data="item" fontSize="150%" :background="true" :margin='0' />
+           <card class="card" v-for="(item, i) in lastCheckout" :key="i" :data="item" fontSize="150%" :background="true" :margin='0' />
+        </div>
+
+      </div>
+
+      <div class="section">
+        <div class="title">Vos anciennes commandes</div>
+        <div class="sub-title">16 Décembre 2020 - {{cost}}€ <button class="btn">Voir la facture</button></div>
+        
+        <div class="last-checkout"> 
+           <card class="card" v-for="(item, i) in lastCheckout" :key="i" :data="item" fontSize="150%" :background="true" :margin='0' />
         </div>
 
       </div>
@@ -76,11 +93,15 @@ export default {
 
 <style scoped lang="scss">
 #info-client{
+  position: relative;
   height: 100%;
-  width: 97.5%;
-  margin-top: 5%;
-  padding-bottom: 2%;
+  width: 90vw;
+  margin-top: 0%;
+  padding: 2vw;
+  padding-top: 10%;
+  left: 2.5vw;
   display: flex;
+  background: #FFF;
   .left{
     width: 33%;
     #logo-client{
@@ -117,7 +138,82 @@ export default {
     margin-left: 2%;
     width: 73%;
     .title{
+      position: relative;
       font-size: 2em;
+    }
+    .sub-title{
+      margin-top: 2%;
+      font-size: 1.5em;
+      position: relative;
+    }
+  }
+
+  .section{
+    margin-top: 5%;
+    &:first-of-type{
+      margin-top: 1%;
+    }
+  }
+
+  .bar{
+    display: inline-block;
+    position: relative;
+    width: 80%; 
+    background: #000;
+    height: 10%;
+  }
+
+  .btn{
+    position: absolute;
+    display: inline-block;
+    background: #ddd;
+    height: 100%;
+    width: 15%;
+    right: 2%;
+    top: 0;
+    border-radius: 10% / 50%;
+    border: none;
+    transition-duration: 0.2s;
+    font-size: 0.6em;
+    padding: 0.2% 0;
+    cursor: pointer;
+    &:active {
+      background: #ccc;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+  #parameters{
+    position: relative;
+    height: 20vh;
+    width: 80%;
+    margin-left: 2vw;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    .btn-parameter{
+      display: inline-block;
+      background: #ddd;
+      margin: 0 auto;
+      margin-bottom: 4%;
+      height: 5vh;
+      width: 75%;
+      top: 0;
+      border-radius: 7% / 50%;
+      border: none;
+      transition-duration: 0.2s;
+      font-size: 1.2em;
+      padding: 0.2% 0;
+      cursor: pointer;
+      &:active {
+        background: #ccc;
+      }
+      &:focus{
+        outline: none;
+      }
     }
   }
 }
