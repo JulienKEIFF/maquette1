@@ -15,7 +15,7 @@
           {{productInfo.desc}}
         </span>
         <br>
-        <a class="link">En savoir plus</a>
+        <a class="link" href="/product">En savoir plus</a>
         <cart class="icon" color="#444444" />
       </div>
 
@@ -124,12 +124,14 @@ export default {
       .link{
         text-align: center;
         position: absolute;
-        bottom: -300%;
+        bottom: -350%;
         width: 80%;
         height: 100%;
+        text-decoration: none;
+        color: #000;
         border: none;
         background: none;
-        font-size: 120%;
+        font-size: 1.2em;
         &:hover{
           color: #2c3e50;
           cursor: pointer;
