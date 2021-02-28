@@ -17,11 +17,8 @@ export default {
 }
 </script>
 
-<style>
-#app{
-  padding-top: 0;
-  height: 120vh;
-}
+<style scoped lang="scss">
+#admin{ margin-top: -15vh; height: 100%;}
 #content{
   width: 80vw;
   padding-left: 13vw;
