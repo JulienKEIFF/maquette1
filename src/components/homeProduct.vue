@@ -15,8 +15,8 @@
           {{productInfo.desc}}
         </span>
         <br>
-        <a class="link">En savoir plus</a>
-        <cart class="icon" color="#444444" />
+        <a class="link" href="/product">En savoir plus</a>
+        
       </div>
 
       <div class="bg"></div>
@@ -25,14 +25,10 @@
 </template>
 
 <script>
-import Card from './icon/cart-icon.vue'
 export default {
   name: "home-product-list",
   props:{
     productInfo: Object
-  },
-  components: {
-    Card
   },
   data(){
     return{

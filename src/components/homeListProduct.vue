@@ -1,5 +1,9 @@
 <template>
   <div id="home-list-product">
+    <h1>Nos meilleurs ventes </h1>
+    <home-product class="product-item" v-for="product in productList" :key="product.id" :productInfo="product" />
+
+    <h1>Nos produits phares</h1>
     <home-product class="product-item" v-for="product in productList" :key="product.id" :productInfo="product" />
   </div>
 </template>
@@ -69,7 +73,14 @@ export default {
   justify-content: space-around;
   flex-wrap: wrap;
   flex: 1 1 30%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  h1 {
+    flex: 1 1 70%;
+    margin-left: 2%;
+    margin-right: 2.2%;
+    font-size: 2.5em;
+    border-bottom: 0.3vh solid black;
+  }
 }
 
 @media screen and (orientation: portrait) {

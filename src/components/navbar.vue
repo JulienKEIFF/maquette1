@@ -48,7 +48,7 @@ export default {
   methods: {
     checkPath: function(value){
       if(value == 0 && this.$route.path !== "/") { this.$router.push({ path: '/' }) };
-      if(value == 1) { this.$router.push({ path: '/product' }) };
+      if(value == 1) { this.$router.push({ path: '/cat' }) };
     },
     checkInteract: function(value){
       if(value == 3){this.cart = !this.cart; this.bg = !this.bg}
