@@ -1,11 +1,11 @@
 <template>
   <div class="vertical-menu">
     <a>|||</a>
-    <a href="/admin" :class="$route.path == '/admin' ? 'active' : '' ">Acceuil</a>
+    <a href="/admin" :class="$route.path == '/admin' ? 'active' : '' ">Accueil</a>
     <a href="/admin/customer" :class="$route.path == '/admin/customer' ? 'active' : '' ">Gestion Client</a>
     <a href="/admin/stock" :class="$route.path == '/admin/stock' ? 'active' : '' ">Gestion des stocks</a>
     <a href="/admin/shop" :class="$route.path == '/admin/shop' ? 'active' : '' ">Gestion des magasins</a>
-    <a href="/" :class="false ? 'active' : '' ">Retour au site</a>
+    <a href="/" :class="false ? 'active' : '' " id="end">Retour au site</a>
   </div>
 </template>
 
@@ -34,4 +34,6 @@ export default {
   background-color: #4CAF50;
   color: white;
 }
+
+#end{margin-top: 65vh; }
 </style>

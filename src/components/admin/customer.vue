@@ -46,6 +46,7 @@ export default {
       }
       &:hover{
         background: #4CAF50;
+        color: white;
       }
     }
   }

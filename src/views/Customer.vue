@@ -3,7 +3,7 @@
     <bandeau :title="'Gestion des clients'" />
     <navbarVert /> 
     <div id="content">
-      <div class="title">Liste des clients</div>
+      <div class="title">Liste des clients <input type="text" placeholder="Rechercher un client"> </div>
 
       <customer :name='item.name' :id='item.id' v-for="(item, i) in customer" :key="i" />
     </div>
@@ -50,8 +50,22 @@ export default {
   width: 80vw;
   padding-left: 13vw;
   padding-top: 5%;
+  padding-bottom: 2%;
   .title{
     margin-bottom: 2%;
+    font-size: 2em;
+    font-weight: 500;
+    input{
+      margin-left: 20%;
+      width: 60%;
+      height: 3vh;
+      border-radius: 2% / 50%;
+      border: none;
+      padding: 0.25% 2%;
+      &:focus{
+        outline: none;
+      }
+    }
   }
 }
 </style>
