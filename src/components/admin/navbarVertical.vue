@@ -12,17 +12,14 @@
 <script>
 export default {
   name: 'navbarVert',
-  mounted: function(){
-    console.log(this.$route)
-  }
 }
 </script>
 
 <style scoped lang="scss">
-.vertical-menu { width: 10vw; position: fixed; }
+.vertical-menu { width: 10vw; position: fixed; z-index: 2; margin-top: 3.8%; height: 100vh; background-color: #ddd }
 
 .vertical-menu a {
-  background-color: #eee;
+  background-color: #ddd;
   color: black;
   display: block;
   padding: 12px; 

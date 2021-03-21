@@ -4,7 +4,7 @@
     <div class="id">{{id}}</div>
 
     <div class="infos">
-      <button>Voir le profile</button>
+      <button>Voir le profil</button>
       <button>Voir les commandes</button>
     </div>
   </div>
@@ -36,7 +36,7 @@ export default {
     right: 0;
     width: 18%;
     button{
-      margin: 0 1%;
+      margin: 0 2%;
       border-radius: 20vw / 20vw;
       padding: 2% 5%;
       border: none;

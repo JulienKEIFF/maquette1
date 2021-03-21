@@ -1,5 +1,6 @@
 <template>
   <div id="admin">
+    <bandeau :title="'Gestion des clients'" />
     <navbarVert /> 
     <div id="content">
       <div class="title">Liste des clients</div>
@@ -10,12 +11,13 @@
 </template>
 
 <script>
+import bandeau from '../components/admin/info_bandeau'
 import navbarVert from '../components/admin/navbarVertical'
 import customer from '../components/admin/customer'
 
 export default {
   name: "Admin-Customer",
-  components: {navbarVert, customer},
+  components: {bandeau, navbarVert, customer},
   data(){
     return{
       customer:[
@@ -44,9 +46,10 @@ export default {
 <style scoped lang="scss">
 #admin{ margin-top: -15vh; }
 #content{
+  min-height: 100vh;
   width: 80vw;
   padding-left: 13vw;
-  padding-top: 2%;
+  padding-top: 5%;
   .title{
     margin-bottom: 2%;
   }
