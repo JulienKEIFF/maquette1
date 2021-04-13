@@ -21,8 +21,7 @@ export default {
   name: 'footer-vue',
   data(){
     return{
-      infosFooter: ["CGV", "CGU", "Notre groupe", "Assistance"],
-      socialMedia: ["Facebook", "Twitter", "Site web"]
+      infosFooter: ["CGV", "CGU", "Notre groupe", "Assistance"]
     }
   }
 }
@@ -39,32 +38,17 @@ export default {
   box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.15);
   .link{
     position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 10%;
-    width: 20%;
-    height: 100%;
-  }
-  .social{
-    position: absolute;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-    margin-left: 10%;
-    width: 30%;
-    height: 100%;
     align-items: center;
-    .footer-links{
-      width: 33%;
-      justify-content: flex-end;
-    }
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+    width: 35%;
+    height: 100%;
+    .footer-links:nth-child(1){width: 15%;}
+    .footer-links:nth-child(2){width: 15%;}
+    .footer-links:nth-child(3){width: 25%;}
   }
   .footer-links{
     position: relative;

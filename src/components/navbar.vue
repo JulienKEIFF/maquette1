@@ -88,14 +88,13 @@ export default {
     justify-content: flex-end;
     #search{
       position: absolute;
-      left: 5%;
-      border-radius: 3% 3% 3% 3% / 50% 50% 50% 50% ;
+      left: 9.5%;
+      border-radius: 2% 2% 2% 2% / 50% 50% 50% 50% ;
       border: none;
-      width: 20vw;
+      width: 25vw;
       height: 20%;
-      &::placeholder{
-        padding-left: 3%;
-      }
+      padding-left: 1%;
+      &:focus{outline: none;}
     }
     .click{
       display: flex;
