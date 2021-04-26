@@ -4,7 +4,7 @@
     <div id="title">{{"Identification"}}</div>
     
     <div id="form">
-      <label for="username">Nom utilisateur</label> <br>
+      <label for="username">Nom d'utilisateur</label> <br>
       <input name="username" type="text"> <br>
       <label for="username" class="password">Mot de passe</label> <br>
       <input name="username" type="password"> <br>

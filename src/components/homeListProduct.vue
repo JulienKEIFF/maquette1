@@ -1,6 +1,6 @@
 <template>
   <div id="home-list-product">
-    <h1>Nos meilleurs ventes </h1>
+    <h1>Nos meilleures ventes </h1>
     <home-product class="product-item" v-for="product in productList" :key="product.id" :productInfo="product" />
 
     <h1>Nos produits phares</h1>
