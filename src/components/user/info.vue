@@ -11,7 +11,7 @@
         <div class="bar" style="background: #333; height: 2px; margin-left: 2vw"></div>
 
         <div id="parameters">
-          <button class="btn-parameter">Voir mes informations personnel</button>
+          <button class="btn-parameter">Voir mes informations personnelles</button>
           <button class="btn-parameter">Changer mon magasin par défaut</button>
         </div>
       </div>

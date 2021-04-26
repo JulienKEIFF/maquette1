@@ -1,6 +1,6 @@
 <template>
   <div id="similaire">
-    <h1>Nos produits similaire</h1>
+    <h1>Nos produits similaires</h1>
     <div id="container-simi">
       <item class="product-item" :productInfo="product" />
       <item class="product-item" :productInfo="product2" />

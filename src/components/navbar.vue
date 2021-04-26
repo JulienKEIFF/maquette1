@@ -37,7 +37,7 @@ export default {
   },
   data(){
     return{
-      info: ["Retrait des produit sous 2H", "Trouver un point de retrait", "Suivis de commande", "Panier", "S'identifier"],
+      info: ["Retrait des produits sous 2H", "Trouver un point de retrait", "Suivis de commandes", "Panier", "S'identifier"],
       page: ["LOGO", "Espace Pare-douche", "Espace Cloison et parois", "Espace cheminée"],
       cart: false,
       login: false,

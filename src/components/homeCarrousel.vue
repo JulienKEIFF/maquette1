@@ -23,7 +23,7 @@ export default {
   data(){
     return{
       imgLink: ["img1.jpg", "img2.jpg", "img3.jpg"],
-      texte: ["Promotion sur les pare-douches", ["Au coin du feu"], ["Reduction sur les encart de cheminé"]],
+      texte: ["Promotion sur les pare-douches", ["Au coin du feu"], ["Réduction sur les encarts de cheminées"]],
       first: true,
       page: 0,
       show: true

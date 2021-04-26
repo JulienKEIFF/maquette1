@@ -5,7 +5,7 @@
 
     <div v-if="!plus" class="actions">
       <button>Editer</button>
-      <button>Suprimmer</button>
+      <button class="red">Suprimmer</button>
     </div>
 
     <div v-if="plus" class="center">Ajouter une boutique</div>
@@ -77,4 +77,5 @@ export default {
     cursor: pointer;
   }
 }
+.red:hover{background: rgb(236, 105, 105) !important;}
 </style>

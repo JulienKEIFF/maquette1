@@ -18,7 +18,7 @@
 
     <div class="block validate">
       <div class="center">
-        <label for="avaible">Produit disponible uniquement</label>
+        <label for="avaible">Produits disponibles uniquement</label>
         <input type="checkbox" name="avaible">
       </div>
     </div>
